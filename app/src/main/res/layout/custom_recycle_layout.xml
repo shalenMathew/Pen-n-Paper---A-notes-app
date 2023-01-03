@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardViewRV"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp"
+
+
+            >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="@drawable/shape"
+    >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Black"
+                android:textSize="40dp"
+                android:padding="12dp"
+                android:id="@+id/titleRV"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+
+                />
+            <TextView
+                android:id="@+id/dateRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+              android:textColor="@color/white"
+                android:text="date"
+                android:textSize="20dp"
+                android:padding="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/titleRV"
+                />
+
+</RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>
