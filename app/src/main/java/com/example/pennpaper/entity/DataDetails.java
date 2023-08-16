@@ -24,15 +24,21 @@ public class DataDetails {
     @ColumnInfo(name = "data_date")
    String date;
 
+    @ColumnInfo(name = "data_time")
+String time;
+
+
+
     @ColumnInfo(name = "data_id")
     @PrimaryKey(autoGenerate = true)
    int id;
 
-    public DataDetails(String title, String description, String date, int id) {
+    public DataDetails(String title, String description, String date, int id,String time) {
         this.title = title;
         this.description = description;
         this.date = date;
         this.id = id;
+        this.time = time;
     }
 
     @Ignore
@@ -72,6 +78,15 @@ public class DataDetails {
     public void setDate(String date) {
         this.date = date;
     }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
 
 //    public static final String CREATE_TABLE =
 //            " CREATE TABLE " + TABLE_NAME + "("

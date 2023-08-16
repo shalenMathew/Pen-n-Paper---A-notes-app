@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase;
 
 import com.example.pennpaper.entity.DataDetails;
 
-@Database( entities = DataDetails.class,version = 1)
+@Database( entities = DataDetails.class,version = 2)
 public abstract class DataBase extends RoomDatabase {
 
     // linking DAO with database

@@ -15,6 +15,7 @@ import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // hide the tool bar in theme
 
     SurfaceView surfaceView;
     MediaPlayer mediaPlayer;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
            Intent i = new Intent(MainActivity.this,HomeActivity.class);
            startActivity(i);
            finish();
-           mediaPlayer.pause();
+           mediaPlayer.stop();
 
 
        }

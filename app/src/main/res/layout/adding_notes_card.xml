@@ -38,6 +38,42 @@
         android:inputType="textCapSentences"
         android:textSize="25sp" />
 
+    <TextView
+        android:id="@+id/addTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="Add time to get notifified"
+        android:inputType="textCapSentences"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/pickTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Pick a time" />
+
+        <Button
+            android:id="@+id/cancelTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/pickTime"
+
+
+            android:text="cancel time" />
+
+    </RelativeLayout>
+
     <EditText
         android:id="@+id/addDescription"
         android:layout_width="match_parent"
