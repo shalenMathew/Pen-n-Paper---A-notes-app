@@ -24,9 +24,11 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.ViewHold
     HomeActivity homeActivity;
 
     public RecycleAdapter(Context context, ArrayList<DataDetails> list,HomeActivity homeActivity) {
+
         this.context = context;
         this.list = list;
         this.homeActivity = homeActivity;
+
     }
 
     @NonNull
@@ -48,10 +50,12 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.ViewHold
         holder.title.setText(dataDetails.getTitle());
         holder.date.setText(dataDetails.getDate());
 
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    homeActivity.addAndEditData(true,dataDetails,position);
+
+                homeActivity.addAndEditData(true,dataDetails,position);
             }
         });
 
@@ -66,11 +70,14 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.ViewHold
         TextView title;
         TextView date;
 
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             title=itemView.findViewById(R.id.titleRV);
             date = itemView.findViewById(R.id.dateRV);
+
+
         }
     }
 }
