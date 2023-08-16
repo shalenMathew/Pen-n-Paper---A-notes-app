@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
     SurfaceView surfaceView;
     MediaPlayer mediaPlayer;
 
-    // this is a trial
-
 
 
     @Override
